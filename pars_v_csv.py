@@ -40,7 +40,7 @@ def writer(date):
 
 
 def main():
-    url = 'https://www.avito.ru/novodvinsk/vakansii?cd=1'
+    url = f'https://www.avito.ru/novodvinsk/vakansii?cd=2&p=1'
     html = get_html(url)
     link = pars_one(html)
     writer(link)
